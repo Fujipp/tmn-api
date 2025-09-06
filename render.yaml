@@ -1,8 +1,11 @@
 services:
   - type: web
     name: tmw-topup-api
-    env: docker
+    runtime: docker            # << เดิมคุณใส่ env: docker → เปลี่ยนเป็น runtime
     plan: free
+    autoDeploy: true
+    region: oregon             # หรือไม่ใส่ก็ได้
+    dockerfilePath: ./Dockerfile
     envVars:
-      - key: API_KEY
-        sync: false   # set in Render dashboard
+      - key: API_KEY           # ตั้งค่าในแดชบอร์ดตอน deploy ให้เป็น secret
+        sync: false
