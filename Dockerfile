@@ -1,5 +1,5 @@
 # Playwright image with Chromium + fonts + deps
-FROM mcr.microsoft.com/playwright:v1.47.2-jammy
+FROM mcr.microsoft.com/playwright:v1.55.0-jammy
 
 WORKDIR /app
 COPY package*.json ./

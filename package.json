@@ -6,7 +6,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "cors": "^2.8.5",
-    "playwright": "^1.47.2"
+    "playwright": "1.55.0"
   },
   "scripts": {
     "start": "node src/server.js",
